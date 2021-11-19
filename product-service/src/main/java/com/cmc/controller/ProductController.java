@@ -56,6 +56,7 @@ public class ProductController {
 		if (resultAllProductByCategory.isEmpty()) {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
+
 		return new ResponseEntity<>(resultAllProductByCategory, HttpStatus.OK);
 	}
 
